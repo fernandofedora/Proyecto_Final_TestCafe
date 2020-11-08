@@ -80,6 +80,9 @@ Version 1.0.2
 the test to create a new account fails if run on two browsers simultaneously, the browsers take the same value from the randomly generated email, which generates an error because both browser process the same information and the same email to create a two they count differently.
 
 if the test runs in the two browsers one after the other, then you will have no problem.
+## Document 📄
+* [Test matrix](https://docs.google.com/spreadsheets/d/1MTxhzBOsy8TSNeU5V1xxl13CMVdKLbbPIDcSpWkOvgc/edit?usp=sharing)
+* [Test plan](https://docs.google.com/document/d/1Kr4OmZS7JT0OPnws0J5CNMXYyVqsQh0Wxi26I4-QKvg/edit?usp=sharing)
  
 ## License 📄
 Copyright (c) 2018-2020 Fernando Espinoza Lopez.
