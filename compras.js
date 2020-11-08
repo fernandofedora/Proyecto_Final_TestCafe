@@ -1,7 +1,7 @@
 import page from './pageModel';
 import { data } from './data';
 
-fixture('Pruebas de modulo de compras')
+fixture('Pruebas del módulo de compras')
     .page ('http://automationpractice.com');
 
 test('Comprar un articulo, proceso completo', async t => {  
@@ -19,13 +19,12 @@ test('Comprar un articulo, proceso completo', async t => {
         .click(page.btnCheckout)
         .wait(500)
     await t
-        //.click(page.btnCheckout)
+        
         .click(page.btnProccesCheckou)
         .wait(500)
         .click(page.btnProccesCheckou1)
         .wait(500)
-       // .click(page.btnProccesCheckou2)
-        .wait(500)
+
         .click(page.checckboxBuy)
         .expect(page.checckboxBuy.checked).ok()
         .click(page.btnProccesCheckou2)
@@ -86,8 +85,9 @@ test('Verificar el shopping-cart summary', async t => {
         .wait(500)
         
         //.click(page.deleteProduct)
+        .expect(page.sumary0.exists).ok()
         .expect(page.sumary1.innerText).contains('Total products')
-        .expect(page.sumaryProduct.innerText).contains('Total')
+        //.expect(page.sumaryProduct.innerText).contains('Total')
         .expect(page.sumary2.innerText).contains('$16.51')
         .expect(page.sumary3.innerText).contains('Total')
         .expect(page.sumary4.innerText).contains('Tax')

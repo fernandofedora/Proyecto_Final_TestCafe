@@ -19,7 +19,7 @@ import {Selector} from 'testcafe';
 
             this.btnContac = Selector('a').withText('Contact us');
             this.contacForm = Selector('#center_column > form > fieldset > h3');
-            this.btnSignIn = Selector('a').withText('Sign in'); //este selector se utiliza tambien en la prueba "SHOPPIN-01"
+            this.btnSignIn = Selector('a').withText('Sign in'); //este selector se utiliza tambien en la prueba "SHOPPIN-01 y MYACOUNT-01"
             this.singInForm = Selector('#columns > div.breadcrumb.clearfix > span.navigation_page');
 
             //Lista de producto
@@ -49,9 +49,7 @@ import {Selector} from 'testcafe';
             this.checkbox3 = Selector('#layered_id_attribute_group_2');
 
             this.list = Selector('#list > a > i');
-            //this.textList = Selector('#center_column > ul > li.ajax_block_product.first-in-line.first-item-of-tablet-line.first-item-of-mobile-line.col-xs-12 > div > div > div.center-block.col-xs-4.col-xs-7.col-md-4 > p');
             this.favorite = Selector('a').withText('Add to Wishlist')
-            //this.carProduct = Selector('#center_column > ul > li.ajax_block_product.first-in-line.first-item-of-tablet-line.first-item-of-mobile-line.col-xs-12 > div > div > div.right-block.col-xs-4.col-xs-12.col-md-4 > div > div.button-container.col-xs-7.col-md-12 > a.button.ajax_add_to_cart_button.btn.btn-default > span')
             this.productName = Selector('a').withText('Printed Dress');
             this.listProduct = Selector('//div[@class="product-count"]');
             this.menuDresses = Selector ('#block_top_menu > ul > li:nth-child(2) > a');
@@ -60,39 +58,65 @@ import {Selector} from 'testcafe';
             this.inputMail = Selector('#email');
             this.inputPass =  Selector('#passwd');
             this.btnSubmit = Selector('#SubmitLogin');
-            //this.buyProduct = Selector('#center_column > ul > li:nth-child(1) > div > div.left-block > div > a.product_img_link > img')
-            //this.buyProduct = Selector('#center_column > ul > li:nth-child(1) > div > div.left-block > div > a.product_img_link')
             this.textBuyProduct = Selector('#product_reference > label');
             this.btnAddCar = Selector('#add_to_cart > button');
             this.btnCheckout = Selector('a').withText('Proceed to checkout');
             this.btnProccesCheckou = Selector('#center_column > p.cart_navigation.clearfix > a.button.btn.btn-default.standard-checkout.button-medium');
             this.btnProccesCheckou1 = Selector('#center_column > form > p > button');
-            this.btnProccesCheckou2 = Selector('#form > p > button')
-          //  this.btnProccesCheckou3 = Selector('#form > p > button')
+            this.btnProccesCheckou2 = Selector('#form > p > button');
             this.checckboxBuy = Selector('#cgv');
             this.payBayBank = Selector('#HOOK_PAYMENT > div:nth-child(1) > div > p > a')
-            this.confrimOrder = Selector('#cart_navigation > button')
-            this.payMent = Selector('#center_column > div > p > strong')
-            this.loginForm = Selector('#login_form')
-            this.createAcout = Selector('#create-account_form')
+            this.confrimOrder = Selector('#cart_navigation > button');
+            this.payMent = Selector('#center_column > div > p > strong');
+            this.loginForm = Selector('#login_form');
+            this.createAcout = Selector('#create-account_form');
             this.cart = Selector('#header > div:nth-child(3) > div > div > div:nth-child(3) > div > a')
-            this.alertCart = Selector('#center_column > p')
-            //this.btnAddCart = Selector('#homefeatured > li.ajax_block_product.col-xs-12.col-sm-4.col-md-3.first-in-line.first-item-of-tablet-line.first-item-of-mobile-line > div > div.right-block > div.button-container > a.button.ajax_add_to_cart_button.btn.btn-default')
-            this.btnAddCar = Selector('#add_to_cart > button')
-            this.numberProductCart = Selector('#header > div:nth-child(3) > div > div > div:nth-child(3) > div > div > div > div > dl > dt')
-            //this.deleteProduct = Selector('#\31 _1_0_0 > i')
-            this.sumary1 = Selector('#cart_summary > tfoot > tr:nth-child(1) > td.text-right')
-            this.sumary2 = Selector('#total_product')
-            this.sumary3 = Selector('#cart_summary > tfoot > tr:nth-child(5) > td.text-right')
-            this.sumary4 = Selector('#cart_summary > tfoot > tr.cart_total_tax > td.text-right')
-            this.sumary5 = Selector('#cart_summary > tfoot > tr:nth-child(7) > td.total_price_container.text-right > span')
-
+            this.alertCart = Selector('#center_column > p');
+            this.btnAddCar = Selector('#add_to_cart > button');
+            this.numberProductCart = Selector('#header > div:nth-child(3) > div > div > div:nth-child(3) > div > div > div > div > dl > dt');
+            this.sumary1 = Selector('#cart_summary > tfoot > tr:nth-child(1) > td.text-right');
+            this.sumary2 = Selector('#total_product');
+            this.sumary3 = Selector('#cart_summary > tfoot > tr:nth-child(5) > td.text-right');
+            this.sumary4 = Selector('#cart_summary > tfoot > tr.cart_total_tax > td.text-right');
+            this.sumary5 = Selector('#cart_summary > tfoot > tr:nth-child(7) > td.total_price_container.text-right > span');
+            this.sumary0 = Selector('#order-detail-content');
             
+            //mi cuenta
+            this.inputNewAcount = Selector ('#email_create');
+            this.btnNewAcount = Selector('#SubmitCreate');
+            this.alertNewAcount = Selector('#create_account_error > ol > li');
+            this.textMyAccount = Selector('#center_column > p')
+           
+            this.email_input = Selector ('#email_create');
+            this.firsname_input = Selector ('#customer_firstname');
+            this.lastname_input = Selector ('#customer_lastname');
+            this.email_form = Selector ('#email');
+            this.password_input = Selector ('#passwd');
+            this.firstname_Address  = Selector ('#firstname');
+            this.lastname_Address  = Selector ('#lastname');
+            this.address = Selector ('#address1');
+            this.city = Selector('#city');
+            this.phone = Selector('#phone_mobile')
+            this.btnRegister = Selector('#submitAccount')
 
+            this.zip = Selector('#postcode')
 
+            this.smenuState = Selector('#id_state')
+            this.optState = Selector('#id_state > option:nth-child(3)')
 
+            this.numerSelect = Selector('#days')
+            this.numerOpt = Selector('#days > option:nth-child(2)')
+            this.monthSelect = Selector('#months')
+            this.monthOpt = Selector('#months > option:nth-child(2)')
+            this.yearSelect = Selector('#years')
+            this.yearOpt = Selector('#years > option:nth-child(22)')
 
+            this.alertFormNewAccount = Selector ('#center_column > div')
+            this.errorTextFormNewAccount = Selector('#center_column > div > p')
 
+            this.alertLoginError = Selector('#center_column > div.alert.alert-danger')
+            this.textLoginError = Selector('#center_column > div.alert.alert-danger > p')
+    
         }
     }
 export default new Page ();

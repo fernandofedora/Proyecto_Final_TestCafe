@@ -1,6 +1,6 @@
 import page from './pageModel';
 
-fixture('Pruebas de modulo de productos')
+fixture('Pruebas del módulo de productos')
     .page ('http://automationpractice.com');
 
     test('Verificar que los botones de categorías populares funciones correctamente', async t => {  
@@ -75,3 +75,4 @@ fixture('Pruebas de modulo de productos')
             .click(page.list)
             .expect(page.favorite.innerText).contains('Add')
     });
+

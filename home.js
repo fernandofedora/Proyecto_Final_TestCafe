@@ -1,6 +1,6 @@
 import page from './pageModel';
 
-fixture('Pruebas de modulo de home page')
+fixture('Pruebas del módulo de home page')
     .page ('http://automationpractice.com');
 
     test('Acceder al home page y comparar que los elementos del menú existan.', async t => { 
