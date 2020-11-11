@@ -6,8 +6,8 @@ fixture('Pruebas del módulo de cuenta')
 
 /*Nota: esta prueba falla si se ejecuta en dos navegadores simultáneamente, 
 los navegadores toman el mismo valor del correo electrónico que se genera aleatoriamente,
- lo cual genera un error porque ambos nevadores procesan la misma información y el mismo correo 
- para crear una dos cuentan distinta.
+ lo cual genera un error porque ambos nevagadores procesan la misma información y el mismo correo 
+ para crear ambas cuentas en cada navagador.
 
 si la prueba se ejecuta en los dos navegadores uno después del otro, entonces no tendra problema. 
 */
